@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    />
+    <title>Book Address</title>
+  </head>
+  <body>
+    <h1>Book Address</h1>
+
+    <div class="cms-table-container" id="cmsTableContainer">
+      <div class="cms-table-row">
+        <div class="cms-table-column cms-name cms-header">Name</div>
+        <div class="cms-table-column cms-phone cms-header">Phone</div>
+        <div class="cms-table-column cms-address cms-header">Address</div>
+        <div
+          class="cms-table-column cms-header cms-add-entry-column"
+          id="cmsAddNewEntry"
+        >
+          +
+        </div>
+      </div>
+      <span id="tableBody"></span>
+    </div>
+
+    <div class="disable-modal" id="backdrop"></div>
+    <div class="disable-modal" id="newPersonModal">
+      <h1>Add New Person</h1>
+
+      <label for="newPersonName">Name</label>
+      <input type="text" id="newPersonName" />
+
+      <label for="newPersonPhone">Phone</label>
+      <input type="text" id="newPersonPhone" />
+
+      <label for="newPersonAddress">Address</label>
+      <input type="text" id="newPersonAddress" />
+
+      <button id="newPersonCancelBtn">Cancel</button>
+      <button id="newPersonSubmitBtn">Submit</button>
+    </div>
+
+    <button id="clearBtn" style="position: absolute; right: 0; bottom: 0;">
+      Clear Local Strorage
+    </button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
